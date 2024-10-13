@@ -1,38 +1,150 @@
-.App {
+:root {
+  --gap: 0.08rem;
+}
+
+#App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100vh;
+  user-select: none;
 }
 
-.App-link {
-  color: #61dafb;
+.clickable:hover {
+  cursor: pointer;
+  background-color: #222;
+  transition: background-color 0.15s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+#watch-face {
+  width: 18rem;
+  height: 22rem;
+  background-color: white;
+  border-radius: 5rem;
+  border: 1rem solid black;
+  box-sizing: border-box;
+
+  display: grid;
+  grid-template-rows: 0.65fr 0.9fr 3fr;
+  
+  overflow: hidden;
+  
+  background-color: #111;
+  color: #ccc;
+}
+
+#top-bar {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+
+  & #settings-button {
+    padding-left: 0.6rem;
+    font-size: 2rem;
+    grid-column: 1 / 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  to {
-    transform: rotate(360deg);
+  
+  & #current-time {
+    padding-left: 0.6rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+    grid-column: 2 / 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
+#screen {
+  display: flex;
+  column-gap: 0.3rem;
+
+  justify-content: center;
+  align-items: center;
+  font-size: 1.65rem;
+  font-weight: bold;
+
+  overflow-y: hidden;
+
+  background-color: #000;
+
+  border-top: var(--gap) solid #222;
+  border-bottom: var(--gap) solid #222;
+
+  #arrow-sign {
+    display: flex;
+  }
+}
+
+
+#button-set {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr 0.9fr;
+
+  font-weight: bold;
+  font-size: 1.5rem;
+
+  & > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  & #enter-button {
+    grid-column: 2 / 4;
+    grid-row: 3 / 4;
+  }
+
+  #button-1, 
+  #button-2, 
+  #button-3, 
+  #button-4, 
+  #button-5, 
+  #button-6 {
+    border: var(--gap) solid #000;
+  }
+  #button-1 {
+    border-left: none;
+    border-top: none;
+  }
+  #button-2 {
+    border-top: none;
+  }
+  #button-3 {
+    border-right: none;
+    border-top: none;
+  }
+  #button-4 {
+    border-left: none;
+  }
+  #button-6 {
+    border-right: none;
+  }
+  #reset-button {
+    background-color: #333;
+    padding-left: 0.5rem;
+    padding-bottom: 0.1rem;
+
+    &:hover {
+      filter: brightness(1.3);
+    }
+  }
+  #enter-button {
+    border-top: var(--gap) solid #000;
+    background-color: rgb(241, 154, 55);
+    color: white;
+
+    padding-right: 0.3rem;
+    padding-bottom: 0.1rem;
+
+    &:hover {
+      filter: brightness(1.1);
+    }
   }
 }
