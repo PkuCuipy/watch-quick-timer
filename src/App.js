@@ -64,7 +64,7 @@ function Counter({targetTimestamp, onEndCounting}) {
       setSecondsLeft(Math.floor((targetTimestamp - new Date().getTime()) / 1000));
     }, 1_000)
     return () => clearInterval(interval);
-  });
+  }, [targetTimestamp]);
 
   useEffect(() => {
     let interval = setInterval(() => {
@@ -123,7 +123,7 @@ function App() {
     const hrs = String(targetTime.getHours()).padStart(2, '0');
     const mins = String(targetTime.getMinutes()).padStart(2, '0');
     setTargetHHMM(`${hrs}:${mins}`);
-  }, [minutesLeft, currentHHMMSS]);
+  }, [minutesLeft, currentHHMMSS, isCounting]);
 
 
   const handleButtonClick = (minutesAdd) => () => {
