@@ -24,15 +24,16 @@
   background-color: white;
   border-radius: 5rem;
   border: 1rem solid black;
-  box-sizing: border-box;
 
   display: grid;
-  grid-template-rows: 0.65fr 0.9fr 3fr;
+  grid-template-rows: 0.6fr 1fr 3fr;
   
   overflow: hidden;
   
   background-color: #111;
   color: #ccc;
+
+  box-shadow: 0 1rem 4rem 0.5rem rgba(0, 0, 0, 0.3);
 }
 
 #top-bar {
@@ -85,7 +86,7 @@
 #button-set {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr 1fr 0.9fr;
+  grid-template-rows: 1fr 1fr 1fr;
 
   font-weight: bold;
   font-size: 1.5rem;
@@ -147,4 +148,13 @@
       filter: brightness(1.1);
     }
   }
+}
+
+#counter {
+  font-size: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  grid-area: 2 / 1 / 4 / 2;
 }
