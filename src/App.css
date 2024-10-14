@@ -18,6 +18,10 @@
   transition: background-color 0.15s;
 }
 
+.clickable:active {
+  filter: brightness(0.9) !important;
+}
+
 #watch-face {
   width: 18rem;
   height: 22rem;

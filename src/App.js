@@ -1,11 +1,15 @@
 import './App.css';
 import { useState, useEffect } from 'react';
 
+import arrowLogo from './icons/arrow.svg';
+import gearLogo from './icons/gear.svg';
+import resetLogo from './icons/reset.svg';
+
 function TopBar({currentHHMMSS, handleClick}) {
   return (
     <div id="top-bar">
       <div id="settings-button" className="clickable" onClick={handleClick}>
-        <img src="gear.svg" alt="settings" style={{"width": "1.5rem"}}/>
+        <img src={gearLogo} alt="settings" style={{"width": "1.5rem"}}/>
       </div>
       <div id="current-time">{currentHHMMSS}</div>
     </div>
@@ -27,7 +31,7 @@ function Screen({currMinutes, targetHHMM}) {
       <span>{MM}m </span>
       <span>(</span>
       <span id="arrow-sign">
-        <img src="arrow.svg" alt="→" style={{"width": "2rem"}}/>
+        <img src={arrowLogo} alt="→" style={{"width": "2rem"}}/>
       </span>
       <span>{targetHHMM}</span>
       )
@@ -46,7 +50,7 @@ function ButtonSet({onButtonClick, onReset, onStart}) {
       <div id="button-5" className="clickable" onClick={onButtonClick(30)}>+30m</div>
       <div id="button-6" className="clickable" onClick={onButtonClick(60)}>+1h</div>
       <div id="reset-button" className="clickable" onClick={onReset}>
-        <img src="reset.svg" alt="Reset" style={{"width": "1.5rem"}}/>
+        <img src={resetLogo} alt="Reset" style={{"width": "1.5rem"}}/>
       </div>
       <div id="enter-button" className="clickable" onClick={onStart}>Start</div>
     </div>
