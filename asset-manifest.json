@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.752878d7.css",
-    "main.js": "/static/js/main.116297b7.js",
-    "index.html": "/index.html",
-    "main.752878d7.css.map": "/static/css/main.752878d7.css.map",
-    "main.116297b7.js.map": "/static/js/main.116297b7.js.map"
+    "main.css": "/watch-quick-timer/static/css/main.752878d7.css",
+    "main.js": "/watch-quick-timer/static/js/main.116297b7.js",
+    "index.html": "/watch-quick-timer/index.html",
+    "main.752878d7.css.map": "/watch-quick-timer/static/css/main.752878d7.css.map",
+    "main.116297b7.js.map": "/watch-quick-timer/static/js/main.116297b7.js.map"
   },
   "entrypoints": [
     "static/css/main.752878d7.css",
