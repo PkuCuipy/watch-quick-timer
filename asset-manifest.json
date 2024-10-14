@@ -1,13 +1,16 @@
 {
   "files": {
-    "main.css": "/watch-quick-timer/static/css/main.752878d7.css",
-    "main.js": "/watch-quick-timer/static/js/main.116297b7.js",
+    "main.css": "/watch-quick-timer/static/css/main.a1c0aab4.css",
+    "main.js": "/watch-quick-timer/static/js/main.97fa6853.js",
+    "static/media/gear.svg": "/watch-quick-timer/static/media/gear.f011a554e22de134b63dd317f49625de.svg",
+    "static/media/arrow.svg": "/watch-quick-timer/static/media/arrow.23586bf18cbbb9e727bb15fb0362e929.svg",
     "index.html": "/watch-quick-timer/index.html",
-    "main.752878d7.css.map": "/watch-quick-timer/static/css/main.752878d7.css.map",
-    "main.116297b7.js.map": "/watch-quick-timer/static/js/main.116297b7.js.map"
+    "static/media/reset.svg": "/watch-quick-timer/static/media/reset.09ff6d0e41b4634c8dda1de1a77fe581.svg",
+    "main.a1c0aab4.css.map": "/watch-quick-timer/static/css/main.a1c0aab4.css.map",
+    "main.97fa6853.js.map": "/watch-quick-timer/static/js/main.97fa6853.js.map"
   },
   "entrypoints": [
-    "static/css/main.752878d7.css",
-    "static/js/main.116297b7.js"
+    "static/css/main.a1c0aab4.css",
+    "static/js/main.97fa6853.js"
   ]
 }
